@@ -13,11 +13,16 @@ row.names(w_RAW) <- LETTERS[1:14]
 
 # Descriptives
 
+tally(~Ssuc,data=m_RAW)
 tally(~Ssuc,data=m_RAW,format="proportion")
+tally(~Ssuc,data=w_RAW)
 tally(~Ssuc,data=w_RAW,format="proportion")
 
+tally(~Jsuc,data=m_RAW)
 tally(~Jsuc,data=m_RAW,format="proportion")
+tally(~Jsuc,data=w_RAW)
 tally(~Jsuc,data=w_RAW,format="proportion")
+
 
 favstats(~CF,data=m_RAW)
 favstats(~CF,data=w_RAW)
